@@ -13,7 +13,7 @@ const viewsrouter = require("./routers/viewsrouter.js")
 
 
 const app = express()
-const httpserver = app.listen(8080, () => console.log("servidor escuchando en el puerto 8080"))
+const httpserver = app.listen(7000, () => console.log("servidor escuchando en el puerto 7000"))
 const socketserver = new Server(httpserver)
 app.engine("handlebars", engine.engine())
 app.set("view engine", "handlebars")

@@ -4,7 +4,7 @@ services:
     image: mongo:latest
     restart: always
     ports:
-      - "27017:27017"
+      - "9001:27017"
     volumes:
       - mongo_data:/data/db
   
@@ -13,7 +13,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8080:8080"
+      - "9000:7000"
     depends_on:
       - mongodb
     environment:

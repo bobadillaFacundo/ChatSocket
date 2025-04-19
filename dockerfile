@@ -12,8 +12,8 @@ RUN npm install
 # Copia el resto de la aplicación
 COPY . .
 
-# Expone el puerto 3000
-EXPOSE 8080
+# Expone el puerto 9000
+EXPOSE 9000
 
 # Variables de entorno para MongoDB
 ENV MONGO_URL='mongodb://localhost:27017'
